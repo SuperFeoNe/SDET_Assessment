@@ -8,7 +8,6 @@ public class Challenge2 {
      * @return The character that appeared most in the String
      */
 
-    // invalid input
     private static char findHighestOccurrence (String input){
         // Uniform cases
         input = input.toUpperCase();

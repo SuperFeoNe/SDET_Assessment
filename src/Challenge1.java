@@ -9,8 +9,8 @@ public class Challenge1 {
 
     private static void fibIndex (long n, long f){
         // Case for negative input and 0
-        if (n < 0) System.out.println("False 0");
-        if (n == 0) System.out.println("True 0");
+        if (n < 0) System.out.println("F is not a fibonacci number");
+        if (n == 0) System.out.println("F is a fibonacci number and its index is 0");
 
         // Find nth number in fibonacci sequence
         long first = 0;
@@ -32,7 +32,7 @@ public class Challenge1 {
         }
 
         // Case 1. F <= n and F is Fibonacci number;
-        // Case 2. F <= n and F is not Fibonacci nuner;
+        // Case 2. F <= n and F is not Fibonacci number;
         // Case 3. F > n
         if (index != -1){
             System.out.println("F: " + f + " is a fibonacci number and its index is: " + index);
@@ -44,9 +44,4 @@ public class Challenge1 {
 
     }
 
-
-
-    public static void main(String[] args) {
-        fibIndex(5, 50);
-    }
 }
